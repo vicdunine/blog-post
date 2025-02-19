@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin:0;
+      padding:0;
+      /* box-sizing: border-box;*/
+    } 
+    body{
+      font-family: 'Figtree', sans-serif;
+
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4d04e;
+      min-height: 100vh;
+      
+
+    }
+
+  .title:hover {
+  color: #f4d04e; /* Hover effect for interactivity */
+  cursor: pointer;
+}
+
+    h2,h3,p{
+      margin-bottom:20px;
+
+    }
+    .tag{
+      font-size: 20px;
+      background-color: #f4d04e;
+      padding:10px;
+      border-radius: 8px;
+    
+    }
+    .date{
+      margin-top: 20px;
+    }
+    .post {
+      font-size: 25px;
+      word-spacing: 2px;
+      color:rgb(103, 96, 96);
+      font-family: sans-serif;
+    }
+    h2{
+      font-family: sans-serif;
+      /* font-weight:900; */
+    }
+    .blog{
+      background-color: whitesmoke;
+      border-radius: 10px;
+      font-size: 1.3rem;
+      border: 2px solid black;
+      /* height:500px; */
+      max-width:500px;
+      padding:25px;
+      text-align:justify;
+    }
+    .blog-img img{
+      width:100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+.image-avatar {
+  display:flex;
+  margin-top:10px;
+  align-items: center;
+}
+img[class=avatar]{
+  height:40px;
+  width:40px;
+}
+.author-name{
+  margin-left:10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="blog">
+
+    <div class="blog-img">
+      <img src="./assets/images/illustration-article.svg" alt="">
+    </div>
+    <div class="text-content">
+              <span class="tag">Learning</span>
+
+        
+            <p class="date">
+              Published 19 Feb 2025
+            </p>
+            <h2 class="title">
+              HTML & CSS foundations
+            </h2>
+
+            <p class="post">
+              These languages are the backbone of every website, defining structure, content, and presentation.
+            </p>
+    </div>
+      <div class="image-avatar">
+            <img src="./assets/images/image-avatar.webp" alt="" class="avatar">
+          <span class="author-name">
+            Greg Hooper
+          </span>
+        
+      </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
